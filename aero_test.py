@@ -25,7 +25,7 @@ class TestAerolinea(unittest.TestCase):
 		self.assertEqual(valor_total, 1470.00)
 
 	def test_aerolinea_3(self):
-		"""CE1
+		"""CE2
 		Vuelo internacional, Europa, 2 adultos y 1 nino, Septiembre, economica"""
 		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 9, 'economica')
 		boleto2 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 9, 'economica')
