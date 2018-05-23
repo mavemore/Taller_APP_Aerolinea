@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class Pasajero(object):
 	"""Clase Pasajero"""
 	def __init__(self, categoria_pasajero, tipo_destino, region, mes, clase):

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Este modulo posee las funciones necesarias para calcular
 el valor total de los pasajes de la aerolinea."""
 import pasajero
