@@ -9,7 +9,7 @@ class TestAerolinea(unittest.TestCase):
 		Vuelo internacional, Europa, 2 adultos y 1 nino, Abril, economica"""
 		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 4, 'economica')
 		boleto2 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 4, 'economica')
-		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Europa', 4, 'economica')
+		boleto3 = pasajero.Pasajero('Nino', 'Internacional', 'Europa', 4, 'economica')
 		lista_pasajero = [boleto1,boleto2,boleto3]
 		valor_total = calculo_funciones.obtener_total(lista_pasajero)
 		self.assertEqual(valor_total, 1540.00)

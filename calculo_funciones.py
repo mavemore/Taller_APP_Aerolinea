@@ -9,14 +9,14 @@ def  obtener_valor_base(categoria_pasajero, tipo_destino):
 	if tipo_destino == 'Nacional':
 		if categoria_pasajero == "Adulto":
 			valor_base = 50
-		elif categoria_pasajero == "Niño":
+		elif categoria_pasajero == "Nino":
 			valor_base = 30
 		elif categoria_pasajero == "Tercera":
 			valor_base = 40
 	elif tipo_destino == 'Internacional':
 		if categoria_pasajero == "Adulto":
 			valor_base = 300
-		elif categoria_pasajero == "Niño":
+		elif categoria_pasajero == "Nino":
 			valor_base = 200
 		elif categoria_pasajero == "Tercera":
 			valor_base = 250
