@@ -12,7 +12,7 @@ class TestAerolinea(unittest.TestCase):
 		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Europa', 4, 'economica')
 		lista_pasajero = [boleto1,boleto2,boleto3]
 		valor_total = calculo_funciones.obtener_total(lista_pasajero)
-		self.assertEqual(valor_total, 1540.00)
+		self.assertEqual(valor_total-1400.00, 140.00)
 
 	def test_aerolinea_2(self):
 		"""Declarar clases de equivalencia utilizadas"""
@@ -27,7 +27,7 @@ class TestAerolinea(unittest.TestCase):
 		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Europa', 3, 'economica')
 		lista_pasajero = [boleto1,boleto2,boleto3]
 		valor_total = calculo_funciones.obtener_total(lista_pasajero)
-		self.assertEqual(valor_total, 1470.00)
+		self.assertEqual(valor_total-1400.00, 70.00)
 
 	def test_aerolinea_2(self):
 		"""CE0: Ejemplo
@@ -37,7 +37,7 @@ class TestAerolinea(unittest.TestCase):
 		boleto6 = pasajero.Pasajero('Niño', 'Internacional', 'Europa', 9, 'economica')
 		lista_pasajero = [boleto4,boleto5,boleto6]
 		valor_total = calculo_funciones.obtener_total(lista_pasajero)
-		self.assertEqual(valor_total, 1568.00)
+		self.assertEqual(valor_total-1400.00, 168.00)
 
 	def test_aerolinea_3(self):
 		"""CE0: Ejemplo
@@ -47,7 +47,7 @@ class TestAerolinea(unittest.TestCase):
 		boleto9 = pasajero.Pasajero('Niño', 'Internacional', 'Europa', 13, 'economica')
 		lista_pasajero = [boleto7,boleto8,boleto9]
 		valor_total = calculo_funciones.obtener_total(lista_pasajero)
-		self.assertEqual(valor_total, 1400.00)
+		self.assertEqual(valor_total-1400.00, 0.00)
 
 if __name__ == '__main__':
 	unittest.main()
