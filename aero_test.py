@@ -18,6 +18,25 @@ class TestAerolinea(unittest.TestCase):
 		"""Declarar clases de equivalencia utilizadas"""
 		valor_total=0
 		self.assertEqual(valor_total,0)
+	def test_aereolinea_temporada_abril(self):
+		"""por temporadas"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 4, 'economica')
+		lista_pasajero = [boleto1]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 550.00)
+	def test_aereolinea_temporada_enero(self):
+		"""por temporadas"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 1, 'economica')
+		lista_pasajero = [boleto1]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 525.00)
+	def test_aereolinea_temporada_septienbre(self):
+		"""por temporadas"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Europa', 9, 'economica')
+		lista_pasajero = [boleto1]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 560.00)
+		
 
 if __name__ == '__main__':
 	unittest.main()
