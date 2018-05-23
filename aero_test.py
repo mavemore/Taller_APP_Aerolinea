@@ -35,7 +35,35 @@ class TestAerolinea(unittest.TestCase):
 		self.assertEqual(valor_total, 1568.00)
 
 
+	def test_aerolinea_4(self):
+		"""CE0: Ejemplo
+		Vuelo internacional, Sudamerica, 2 adultos y 1 nino, Abril, economica"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 4, 'economica')
+		boleto2 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 4, 'economica')
+		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Sudamerica', 4, 'economica')
+		lista_pasajero = [boleto1,boleto2,boleto3]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 1540.00)
 
+	def test_aerolinea_5(self):
+		"""Declarar clases de equivalencia utilizadas"""
+		""""Vuelo Internacional, Sudamerica, 2 adultos y 1 niño, Febrero, economica"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 2, 'economica')
+		boleto2 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 2, 'economica')
+		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Sudamerica', 2, 'economica')
+		lista_pasajero = [boleto1,boleto2,boleto3]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 1470.00)
+
+	def test_aerolinea_6(self):
+		"""Declarar clases de equivalencia utilizadas"""
+		""""Vuelo Internacional, Sudamerica, 2 adultos y 1 niño, Noviembre, economica"""
+		boleto1 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 11, 'economica')
+		boleto2 = pasajero.Pasajero('Adulto', 'Internacional', 'Sudamerica', 11, 'economica')
+		boleto3 = pasajero.Pasajero('Niño', 'Internacional', 'Sudamerica', 11, 'economica')
+		lista_pasajero = [boleto1,boleto2,boleto3]
+		valor_total = calculo_funciones.obtener_total(lista_pasajero)
+		self.assertEqual(valor_total, 1568.00)
 
 if __name__ == '__main__':
 	unittest.main()
