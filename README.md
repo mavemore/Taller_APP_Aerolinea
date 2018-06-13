@@ -19,3 +19,4 @@ Taller de Caja Negra de APP de Aerolínea
 
 		git push origin [nombre_apellido1_apellido2]
 
+[![Coverage Status](https://coveralls.io/repos/github/mavemore/Taller_APP_Aerolinea/badge.svg?branch=master)](https://coveralls.io/github/mavemore/Taller_APP_Aerolinea?branch=master)
